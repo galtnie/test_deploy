@@ -1,4 +1,5 @@
 {
+  "homepage": "https://galtnie.github.io/test_deploy",
   "name": "app",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,7 @@
     "axios": "^0.18.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
+    "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
     "react": "^16.8.4",
     "react-alert": "^5.5.0",
@@ -19,6 +21,8 @@
     "sweetalert": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
